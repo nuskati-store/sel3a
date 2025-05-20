@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>سلعة | Sel3a</title>
+  <style>
+    body {
+      font-family: 'Tahoma', sans-serif;
+      background-color: #f4f0eb;
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+
+    header {
+      background-color: #d7c3a3;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #5b3e1d;
+    }
+
+    h2 {
+      color: #7c5c3b;
+    }
+
+    .product-box {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+      margin-top: 20px;
+      background-color: #5b3e1d;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #7a5730;
+    }
+
+    .hidden {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .order-form {
+      margin-top: 50px;
+      text-align: right;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .order-form label {
+      display: block;
+      margin-bottom: 8px;
+      color: #5b3e1d;
+    }
+
+    .order-form input, .order-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>سلعة | Sel3a</h1>
+  </header>
+
+  <div class="product-box">
+    <h2>🎮 لعبة تحدي الأصدقاء</h2>
+    <p>السعر: 20 درهم إماراتي فقط</p>
+
+    <button onclick="simulatePayment()">ادفع الآن عبر Apple Pay (تجريبي)</button>
+
+    <div id="downloadSection" class="hidden">
+      <p>✅ تم الدفع بنجاح! يمكنك الآن تحميل المنتج:</p>
+      <a href="https://drive.google.com/YOUR_PRODUCT_LINK" target="_blank">
+        <button>تحميل المنتج الآن</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="order-form">
+    <h3>طلب خاص</h3>
+    <form>
+      <label for="name">الاسم الكامل</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">البريد الإلكتروني</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="request">تفاصيل الطلب</label>
+      <textarea id="request" name="request" rows="4"></textarea>
+
+      <button type="submit">إرسال الطلب</button>
+    </form>
+  </div>
+
+  <script>
+    function simulatePayment() {
+      alert("سيتم الربط لاحقًا مع Apple Pay / Stripe. هذا الزر تجريبي.");
+      document.getElementById('downloadSection').classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>
