@@ -11,15 +11,9 @@
       text-align: center;
       padding: 50px;
     }
-<header>
-  <div style="display: flex; align-items: center; justify-content: center; gap: 15px; padding: 20px; background-color: #d7c3a3; border-radius: 12px;">
-    <img src="https://raw.githubusercontent.com/nuskati-store/sel3a/main/silaa_logo_compressed.png" alt="شعار سلعة" style="height: 60px; border-radius: 8px;">
-    <h1 style="margin: 0; color: #5b3e1d;">سلعة | Sel3a</h1>
-  </div>
-</header>
-<img src="https://raw.githubusercontent.com/nuskati-store/sel3a/main/silaa_logo_compressed.png"
 
-    background-color: #d7c3a3;
+    header {
+      background-color: #d7c3a3;
       padding: 20px;
       border-radius: 12px;
       margin-bottom: 40px;
@@ -94,12 +88,15 @@
 <body>
 
   <header>
-    <h1>سلعة | Sel3a</h1>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+      <img src="https://raw.githubusercontent.com/nuskati-store/sel3a/main/silaa_logo_compressed.png" alt="شعار سلعة" style="height: 60px; border-radius: 8px;">
+      <h1>سلعة | Sel3a</h1>
+    </div>
   </header>
 
   <div class="product-box">
     <h2>🎮 لعبة تحدي الأصدقاء</h2>
-    <p>السعر: ٢٠ درهم إماراتي فقط<p>
+    <p>السعر: ٢٠ درهم إماراتي فقط</p>
 
     <button onclick="simulatePayment()">ادفع الآن عبر Apple Pay (تجريبي)</button>
 
